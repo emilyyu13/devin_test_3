@@ -4,6 +4,7 @@
       <div class="logo">URBAN FIT24DM</div>
       <div class="header-controls">
         <div class="system-id">システム確認用(ID:20528)</div>
+        <input type="text" class="form-control header-input" placeholder="担当者名">
         <button class="btn btn-light">担当変更</button>
         <button class="btn btn-light">練習用</button>
       </div>
@@ -44,6 +45,11 @@
 
 .system-id {
   margin-right: 10px;
+}
+
+.header-input {
+  width: 150px;
+  height: 30px;
 }
 
 .btn {
