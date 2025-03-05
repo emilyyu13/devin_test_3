@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>DevinTest3</title>
+    <title>URBAN FIT24DM</title>
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <%= csrf_meta_tags %>
     <%= csp_meta_tag %>
@@ -11,6 +11,66 @@
   </head>
 
   <body>
-    <%= yield %>
+    <header class="main-header">
+      <div class="logo">URBAN FIT24DM</div>
+      <div class="header-controls">
+        <div class="system-id">システム確認用(ID:20528)</div>
+        <button class="btn btn-light">担当変更</button>
+        <button class="btn btn-light">練習用</button>
+      </div>
+    </header>
+    
+    <div class="main-container">
+      <aside class="sidebar">
+        <div class="sidebar-header">
+          <select class="form-select">
+            <option>文書管理</option>
+          </select>
+          <button class="btn btn-light">変更</button>
+        </div>
+        
+        <div class="search-box">
+          <input type="text" class="form-control" placeholder="会員検索">
+          <button class="btn btn-search"><i class="search-icon"></i></button>
+        </div>
+        
+        <nav class="sidebar-nav">
+          <ul>
+            <li><a href="#"><i class="icon-search"></i> 会員情報検索・確認</a></li>
+            <li class="dropdown">
+              <a href="#" class="dropdown-toggle"><i class="icon-calendar"></i> 入会予約管理</a>
+              <ul class="dropdown-menu">
+                <li><a href="#">新規入会予約登録・確認</a></li>
+              </ul>
+            </li>
+            <li class="dropdown">
+              <a href="#" class="dropdown-toggle"><i class="icon-user"></i> パーソナル予約管理</a>
+            </li>
+            <li class="dropdown">
+              <a href="#" class="dropdown-toggle"><i class="icon-building"></i> 法人情報 管理</a>
+            </li>
+            <li><a href="#"><i class="icon-users"></i> 来館中会員一覧</a></li>
+            <li class="dropdown">
+              <a href="#" class="dropdown-toggle"><i class="icon-message"></i> 伝言管理</a>
+            </li>
+            <li><a href="#"><i class="icon-mail"></i> メールマガジン</a></li>
+            <li class="dropdown">
+              <a href="#" class="dropdown-toggle"><i class="icon-staff"></i> スタッフ管理</a>
+            </li>
+            <li class="dropdown">
+              <a href="#" class="dropdown-toggle"><i class="icon-report"></i> 帳票出力</a>
+            </li>
+            <li><a href="#"><i class="icon-plot"></i> 会員プロッティング</a></li>
+            <li class="dropdown">
+              <a href="#" class="dropdown-toggle"><i class="icon-settings"></i> 基本情報管理</a>
+            </li>
+          </ul>
+        </nav>
+      </aside>
+      
+      <main class="content">
+        <%= yield %>
+      </main>
+    </div>
   </body>
 </html>
