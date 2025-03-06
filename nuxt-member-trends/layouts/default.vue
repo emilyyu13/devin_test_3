@@ -5,7 +5,7 @@
       <div class="header-controls">
         <div class="system-id">システム確認用(ID:20528)</div>
         <input type="text" class="form-control header-input" placeholder="担当者名">
-        <button class="btn btn-light">担当変更</button>
+        <button class="btn btn-change-staff">担当変更</button>
         <button class="btn btn-light">練習用</button>
       </div>
     </header>
@@ -69,6 +69,13 @@
   background-color: #337ab7;
   color: white;
   border-color: #2e6da4;
+}
+
+/* Special styling for the 担当変更 button */
+.btn-change-staff {
+  background-color: #31b0d5;
+  border-color: #269abc;
+  color: white;
 }
 
 /* Main container */
